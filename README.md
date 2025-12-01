@@ -28,18 +28,18 @@ The goal is to study how different **model orders (1-DOF vs 2-DOF)** and **PID-b
 ## 🚀 How to Run
 
 ### **Requirements**
-- MATLAB + Simulink (e.g., **R2023b** or later)
+- MATLAB + Simulink (e.g., **R2025b** used here)
 
 ### **Steps**
 1. Open the main model file:  
-   **`Modelling_Suspension.slx`**
+   **`quatercar_simulinkmodel.slx`**
 2. Inside the model, select the subsystem/variant you want to simulate:
    - 1-DOF
    - 2-DOF
    - Comparison
-3. Run the simulation to observe:
-   - Body displacement/acceleration  
-   - Wheel dynamics  
+3. Run param_quatercarmodel.m file
+4. Run the simulation to observe:
+   - Body displacement    
    - PID-controlled vs passive responses  
 
 ---
@@ -49,7 +49,7 @@ The goal is to study how different **model orders (1-DOF vs 2-DOF)** and **PID-b
 - Both 1-DOF and 2-DOF models are converted into **transfer-function representations**.
 - PID controllers are designed using:
   - Step response requirements (overshoot, settling time, steady-state error)
-  - MATLAB tuning tools  
+  - MATLAB tuning tools  - pid tuner
 - Demonstrates how PID gains suitable for the **simple 1-DOF** case must be revised for the **more realistic 2-DOF** model due to added dynamics.
 
 ---
